@@ -1,5 +1,5 @@
 public class TV {
-    //커밋
+    //커밋asd
     String brand;
     int year;
     int inch;
