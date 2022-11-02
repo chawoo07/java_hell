@@ -1,20 +1,21 @@
-class main {ㅔ[]
+import java.util.Scanner;
+
+public class Main{
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-        Song song = new Song("아아", "아아", 999, "아아");
-        song.show();
-
-        //다음 main() 메소드를 실행하였을 때 예시와 같이 출력되도록 TV 클래스를 작성하라.
-
-        TV myTV = new TV("LG", 2017, 32); //LG에서 만든 2017년 32인치
-        myTV.show();
-
-        Sumnum sumnum = new Sumnum(3);
-        sumnum.show();
-
-        }
+        System.out.print("수학, 과학, 영어 순으로 3개의 정수 입력 >> ");
 
 
-
+        System.out.print("수학: ");
+        int math = sc.nextInt();
+        System.out.print("과학: ");
+        int science = sc.nextInt();
+        System.out.print("수학: ");
+        int english = sc.nextInt();
+        Grade me = new Grade(math, science, english);
+        System.out.println("평균은 "+me.average());
+        System.out.println(me.getGrade()); // 수 입니다
     }
 
+}
